@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cotton Candy Widget</title>
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:transparent;
+    overflow:hidden;
+}
+
+/* 外層容器 */
+.wrapper{
+    display:flex;
+    align-items:center;
+    width:100%;
+    height:60px;
+    padding:0 10px;
+    box-sizing:border-box;
+}
+
+/* 左側標籤 */
+.label{
+    background:linear-gradient(135deg,#6b2b2b,#9a5a4a);
+    color:white;
+    padding:10px 22px;
+    border-radius:999px;
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:1px;
+    font-family: Georgia, "Times New Roman", serif;
+    box-shadow:0 4px 10px rgba(107,43,43,0.25);
+    white-space:nowrap;
+}
+
+/* 右側線條 */
+.line{
+    flex:1;
+    height:2px;
+    margin-left:14px;
+    background:linear-gradient(
+        to right,
+        #6b2b2b,
+        rgba(107,43,43,0)
+    );
+    border-radius:2px;
+}
+
+/* 小裝飾點 */
+.dot{
+    width:6px;
+    height:6px;
+    background:#6b2b2b;
+    border-radius:50%;
+    margin-left:10px;
+    box-shadow:0 0 8px rgba(107,43,43,0.4);
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+    <div class="label">
+        View
+    </div>
+
+    <div class="line"></div>
+
+    <div class="dot"></div>
+
+</div>
+
+</body>
+</html>
